@@ -1,0 +1,23 @@
+.navStyle{
+    height: 4.5rem;
+    width: 100%;
+    background-color: rgb(40, 121, 40);
+}
+
+.navStyle img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.navStyle div{
+ padding: 0.7rem;
+ margin-left: 2rem;
+}
+
+.navStyle span{
+    margin-left: 0.9rem;
+    color: rgb(189, 215, 196);
+    font-size: 1.5rem;
+    font-style: oblique;
+    font-family: cursive;
+}

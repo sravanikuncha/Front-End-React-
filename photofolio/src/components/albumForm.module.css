@@ -1,0 +1,43 @@
+.albumFormStyle{
+    border-radius: 1rem;
+    margin-left: 30%;
+    margin-top: 4%;
+    width: 55%;
+    height: 130px;
+    background-color: rgb(156, 193, 100);
+    box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.25); 
+}
+
+h3{
+    padding:0.7rem;
+    font-family:cursive;
+}
+
+.albumFormStyle div{
+    margin-left: 5%;
+}
+
+.albumFormStyle input{
+    padding: 0.4rem;
+    width: 60%;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    border: none;
+    background-color: rgb(233, 224, 213);
+}
+
+.albumFormStyle button{
+    margin-left: 2rem;
+    border: none;
+    width: 13%;
+    border-radius: 5px;
+    color: white;
+}
+
+.clear{
+    background-color: red;
+}
+
+.create{
+    background-color: blue;
+}

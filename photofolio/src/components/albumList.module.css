@@ -1,0 +1,53 @@
+.addAlbumStyle{
+    border-color: blue;
+    background-color: rgb(192, 192, 207);
+    color: rgb(70, 70, 185);
+}
+
+.cancelStyle{
+    border-color: red;
+    background-color: rgb(220, 178, 178);
+    color: rgb(227, 125, 125);
+}
+
+.albumListStyle{
+    margin-left: 90%;
+    margin-top:5%;
+    width: 8%;
+    border-radius: 9px;
+    font-size: 0.8rem;
+    padding: 2px;
+}
+
+.multiplecard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ }
+
+.albumcard{
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    margin:1rem;
+    box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.25); 
+    border-radius: 9px;
+}
+
+.albumcardimage{
+    height: 70%;
+    width: 90%;
+    margin: 7px;
+}
+
+
+.albumcard:hover{
+    background-color: rgb(133, 195, 133);
+}
+
+.albumname{
+    margin-left: 30%;
+    margin-top: 5%;
+    font-family: cursive;
+}
