@@ -1,0 +1,10 @@
+.song audio{
+    width: 85%;
+    margin-top: 20%;
+    margin-left: 10%;
+}
+
+.song{
+    border-radius: 9px;
+    background-color: black;
+}

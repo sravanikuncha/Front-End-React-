@@ -1,0 +1,25 @@
+.productCard{
+  width: 25%;
+  box-shadow: 10px 10px 15px 4px rgba(90, 192, 123, 0.2); 
+  padding: 1rem;
+  margin:1rem;
+  height: inherit;
+}
+
+.imageProduct{
+    width: 90%;
+    height: 40%;
+}
+
+.imageDesc{
+    color: green;
+    font-size: 1rem;
+}
+
+.addTocart{
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    width: 80%;
+    background-color: rgb(60, 181, 60);
+}

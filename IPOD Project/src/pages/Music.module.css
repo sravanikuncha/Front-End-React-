@@ -1,0 +1,33 @@
+.musicmenu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: cornsilk;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+
+.musicmenu div{
+    width: 100%;
+}
+
+.selectedmenu{
+    border-radius: 0.4rem;
+    padding-top: 0.4rem;
+    padding-left: 0.2rem;
+    background-color: rgba(56, 124, 226, 0.876);
+}
+
+.selectedmenu span{
+    color: white;
+}
+
+.visible{
+    visibility: visible;
+    font-size: 0.6rem;
+    margin-left: 35%;
+}
+
+.hide{
+    visibility: hidden;
+}
