@@ -1,0 +1,15 @@
+/* Write code for your CSS here */
+.App{
+    position: relative;
+    left: 20%;
+}
+
+.skill button{
+    background-color: rgb(71, 71, 193);
+}
+
+.skill li{
+    list-style-type: none;
+    display: inline;
+    margin: 2rem;
+}

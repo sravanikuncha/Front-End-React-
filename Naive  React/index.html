@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>React Component</title>
+        <!-- Include all the CDNs here -->
+         <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+      <div id="root"></div>
+      <script type="text/babel">
+        //Create a functional Component "App".
+
+        const Component2=()=>{
+            return (<h1>COmponent2</h1>)
+        }
+
+        function App(){
+       		const jsxContent=(<>
+            <h1>React Project</h1>
+            <p>Skills used to make  this project</p>
+            <ol>
+            <li>HTML</li>
+            <li>javascript</li>
+            <li>CSS</li>
+            </ol>
+            </>)
+
+            
+            return jsxContent;
+        }
+        //Return A heading, paragragh and ordered/unordered list
+        //Render the component on the browser
+
+        //expressions JSX
+
+        function ExpressionComponent(){
+            const name='Kuncha Sravani'
+            const age='27'
+            const arr=[1,2,3,4];
+
+            function evenumber(){
+              return arr.filter((eachEle)=>eachEle%2==0)
+            }
+
+            return <>
+            <h1>Hello {name} your age is {age} array is {arr}</h1>
+            <h2>h2 tag</h2>
+            {arr.map((eacharr)=><h3>{eacharr}</h3>)}
+            </>
+        }
+        
+        // ReactDOM.createRoot(document.getElementById('root')).render((<><App/><Component2/></>));
+        ReactDOM.createRoot(document.getElementById('root')).render(<ExpressionComponent/>)
+      </script>
+    </body>
+</html>

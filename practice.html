@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>JSX Examples</title>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="text/babel" >
+
+
+            //only html
+            // const ArrowComponent=()=>{
+            //     return <div><h1>Arrow Component1</h1><p>Paragraph Arrow Component1</p></div>
+            // }
+
+            // or
+            const ArrowComponent=()=>(
+                 <div><h1>Arrow Component1</h1><p>Paragraph Arrow Component1</p></div>
+            )
+
+            function AppComponent(){
+                return <div><ArrowComponent/><h1>heading 1</h1><p>Paragraph1</p></div>
+            }
+
+            //embed javascript
+           const name="React FrameWork";
+           const publishedYear=2010;
+           const good=true;
+           const heading=<h1>Heading JSX Expression to heading</h1>
+           const arr=[1,2,3,4,5]
+           const sum=(a,b)=>{
+            return a+b;
+           }
+
+           const result=arr.map((eachArrEle,index)=><h1 key={index}>{eachArrEle}</h1>);
+        //    <h1>{eachArrEle}</h1> this gets stored in result  when we render it result each one takes and prints as it is h1 cursor goe sto next line 
+           function JSComponent(){
+            return (<>
+            <h1>Hello {name} </h1>
+            <p>publishedYear {publishedYear}</p>
+            <p>good:{good.toString()}</p>
+            <p>sum:{sum(2,4)}</p>
+            <p>{10+5}</p>
+            <p>{heading}</p>
+            <p>{arr}</p>
+            sum={10+10}
+            {arr.map((eachArrEle,index)=><h1 key={index}>{eachArrEle}</h1>)}
+            {result}
+            </>)
+           }
+
+           function CarComponent(){
+
+            const cars=["car1","car2","car3"];
+            const result=cars.map((eachCar,index)=>(<li key={index}>{eachCar}</li>));
+            return(
+            <>
+            <ul>
+                {result}
+            </ul>
+            </>
+            )
+           }
+
+       
+
+
+            const reactDOM=ReactDOM.createRoot(document.getElementById("root"));
+
+            // reactDOM.render(<JSComponent/>);
+            reactDOM.render(<CarComponent/>)
+
+            //types
+            // reactDOM.render(<><h1></h1><p></p></>);
+            // reactDOM.render(<><AppComponent/><ArrowComponent/></>)
+            //  reactDOM.render(<AppComponent/>)
+            // render will take jsx elements 
+        </script>
+    </body>
+</html>
