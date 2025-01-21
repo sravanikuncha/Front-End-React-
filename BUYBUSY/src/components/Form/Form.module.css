@@ -1,0 +1,17 @@
+.catgeoryStyle{
+   list-style: none; 
+}
+
+.formHeading{
+   text-align: center;
+   color: #382747;
+   font-size: 1.3rem;
+   font-family: cursive;
+}
+
+.checkboxStyle{
+   margin:1.5rem;
+   /* font-size: 0.5rem; */
+   color: #382747;
+}
+

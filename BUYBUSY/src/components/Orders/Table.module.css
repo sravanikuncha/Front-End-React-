@@ -1,0 +1,13 @@
+.tabledivStyle{
+    width: 60%;
+    border: 2px solid green;
+    box-shadow: 10px 10px 15px 4px rgba(90, 192, 123, 0.2); 
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
+
+.tbodyStyle{
+    font-size: small;
+    font-family: cursive;
+}
